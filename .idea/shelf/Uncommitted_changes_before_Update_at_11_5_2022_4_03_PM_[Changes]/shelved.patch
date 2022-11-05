@@ -1,0 +1,35 @@
+Index: JAVA_Hack/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"Hello world!\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/JAVA_Hack/src/Main.java b/JAVA_Hack/src/Main.java
+--- a/JAVA_Hack/src/Main.java	(revision 2a4c237d88fc0e6a4b13235fbcf6f340d4b3e743)
++++ b/JAVA_Hack/src/Main.java	(date 1667680978950)
+@@ -1,5 +1,6 @@
+ public class Main {
+     public static void main(String[] args) {
+         System.out.println("Hello world!");
++        System.out.println("workS?");
+     }
+ }
+\ No newline at end of file
+Index: JAVA_Hack/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/JAVA_Hack/.idea/vcs.xml b/JAVA_Hack/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1667680979410)
++++ b/JAVA_Hack/.idea/vcs.xml	(date 1667680979410)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
