@@ -1,18 +1,20 @@
 <script setup>
 import { ref } from 'vue'
+import newPost from './newPost.vue';
 
 defineProps({
   msg: String
 })
 
-const count = ref(0)
+
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+      <button type="button" @click="show=true">+ New Post</button>
+    
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
