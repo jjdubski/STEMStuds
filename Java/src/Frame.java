@@ -18,7 +18,8 @@ public class Frame extends JFrame implements ActionListener{
 	}
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==button1) {
-			System.out.println("bro");
+			Math bro = new Math(15, 30);
+			System.out.println(bro.doMath());
 		}
 	}
 	
