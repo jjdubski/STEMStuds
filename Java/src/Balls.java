@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class Balls {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("-------------Candy Exchange----------------------\n\n\n");
