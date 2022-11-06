@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candy Exchange</title>
-    <h1>The Candy Exchange</h1>
+    <link rel="stylesheet" href="styles.css">
+    <title>Debt Manager</title>
 </head>
 <body>
-    
+    <navbar>
+        <a>
+            <h3>
+                navbar
+            </h3>
+        </a>
+    </navbar>
+    <div>
+        <h1>Money Saver</h1>
+        <h3 style="color: beige">Helping YOU save your hard earned money and get out of debt.</h3>
+    </div>
+    <div class="calculators"> 
+        <div>
+            <h3>Debt-Time Calculator</h3>
+            <h4>Please enter your current Debt amount: </h4>
+            <input type="text" id="debt" placeholder="Enter Amount">
+            <h4>Please enter your interest on the debt: </h4>
+            <input type="text" id="interestD" placeholder="Enter Percentage">
+            <h4>Please enter your monthly payment: </h4>
+            <input type="text" id="payment" placeholder="Enter Amount">
+            <script src="script.js"></script>
+            <button id="btn-submit">Submit</button>
+        </div>
+        <div>
+            <h3>Investment Calculator</h3>
+            <h4>Please enter your starting capital: </h4>
+            <input type="text" id="principal" placeholder="Enter Amount">
+            <h4>Please enter your annual interest: </h4>
+            <input type="text" id="interestI" placeholder="Enter Percentage">
+            <h4>Please enter your monthly contribution: </h4>
+            <input type="text" id="contribution" placeholder="Enter Amount">
+            <script src="script.js"></script>
+            <button id="btn-submit">Submit</button>
+        </div>
+        <div>
+            <h3>Goal Calculator</h3>
+            <h4>Please enter your money goal: </h4>
+            <input type="text" id="goal" placeholder="Enter Amount">
+            <h4>Please enter your current savings: </h4>
+            <input type="text" id="savings" placeholder="Enter Amount">
+            <h4>Please enter your annual interest: </h4>
+            <input type="text" id="interest-goal" placeholder="Enter Percentage">
+            <script src="script.js"></script>
+            <button id="btn-submit">Submit</button>
+        </div>
+    </div>
 </body>
 </html>

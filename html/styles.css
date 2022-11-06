@@ -1,0 +1,22 @@
+*{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #ff6f00;  
+}
+h1,h2{
+    color: beige;
+}
+button{
+    margin-top: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.calculators{
+    display: flex;
+}
+.calculators>div{
+    margin-right: 10px;
+}
