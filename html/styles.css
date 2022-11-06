@@ -1,12 +1,42 @@
 *{
     color: black;
+    text-shadow: beige 1px 0 3px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: #ff6f00;  
+    margin-left: 5%;
+    background-color: #ff6f00;
+    text-shadow: darkgray 1px 0;  
+    width: 90%;
+    align-items: center;
 }
-h1,h2{
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+}
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    row-gap: 2px;
+}
+.gridItem>h3{
+    display: flex;
     color: beige;
+    text-shadow: darkgray 1px 0 2px; 
+    padding: 1em 0 1em;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+}
+h1{
+    color: beige;
+    text-shadow: black 3px 0 2px;  
+}
+h2{
+    color: beige;
+    text-shadow: black 3px 0 2px;  
 }
 button{
     margin-top: 10px;
@@ -16,7 +46,35 @@ button{
 
 .calculators{
     display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 .calculators>div{
     margin-right: 10px;
+}
+
+.pumpkin{
+    margin: 0 30px 0;
+}
+footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 20%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#btn-submit{
+    margin-top: 2em;
+}
+
+.slogan{
+    color: beige; 
+    padding-top: 20px; 
+    display: flex; 
+    justify-content: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    padding: 0 0 1em;
 }

@@ -10,49 +10,61 @@
 <body>
     <navbar>
         <a>
-            <h3>
-                navbar
-            </h3>
+            
         </a>
     </navbar>
-    <div>
-        <h1>Money Saver</h1>
-        <h3 style="color: beige">Helping YOU save your hard earned money and get out of debt.</h3>
+    <div class="container" style="justify-content: center;">
+        <img class="witch" src="witch-left.png" width="100px" height="100px">
+        <img class="clown" src="clown.png" width="100px" height="100px">
+        <img class="pumpkin" src="pumpkin.png" width="100px" height="100px">
+        <h1 style="margin: 40px 0 0">Money Saver</h1>
+        <img class="pumpkin" src="pumpkin.png" width="100px" height="100px">
+        <img class="clown" src="clown.png" width="100px" height="100px">
+        <img class="witch" src="witch-right.png" width="100px" height="100px">
     </div>
-    <div class="calculators"> 
-        <div>
-            <h3>Debt-Time Calculator</h3>
-            <h4>Please enter your current Debt amount: </h4>
-            <input type="text" id="debt" placeholder="Enter Amount">
-            <h4>Please enter your interest on the debt: </h4>
-            <input type="text" id="interestD" placeholder="Enter Percentage">
-            <h4>Please enter your monthly payment: </h4>
-            <input type="text" id="payment" placeholder="Enter Amount">
-            <script src="script.js"></script>
-            <button id="btn-submit">Submit</button>
+    <h2 class="slogan">The spookiest future value calculator.</h2>
+    <div class="container"> 
+        <div class="gridItem">
+            <h3>Debt Calculator</h3>
+            <h4>Enter your current debt amount: </h4>
+            <input type="text" id="debt" placeholder="Enter Amount ($)">
+            <h4>Enter your interest on the debt: </h4>
+            <input type="text" id="interestD" placeholder="Enter Percentage (%)">
+            <h4>Enter your monthly payment: </h4>
+            <input type="text" id="payment" placeholder="Enter Amount ($)">
+            <button id="btn-submit" onclick="debtCalc()">Submit</button>
+            <script src=""script.js></script>
         </div>
-        <div>
+        <div class="gridItem">
             <h3>Investment Calculator</h3>
-            <h4>Please enter your starting capital: </h4>
-            <input type="text" id="principal" placeholder="Enter Amount">
-            <h4>Please enter your annual interest: </h4>
-            <input type="text" id="interestI" placeholder="Enter Percentage">
-            <h4>Please enter your monthly contribution: </h4>
-            <input type="text" id="contribution" placeholder="Enter Amount">
+            <h4>Enter your starting capital: </h4>
+            <input type="text" id="principal" placeholder="Enter Amount ($)">
+            <h4>Enter your annual interest: </h4>
+            <input type="text" id="interestI" placeholder="Enter Percentage (%)">
+            <h4>Enter your monthly contribution: </h4>
+            <input type="text" id="contribution" placeholder="Enter Amount ($)">
+            <h4>Enter the amount of years: </h4>
+            <input type="text" id="years" placeholder="Enter Amount ($)">
             <script src="script.js"></script>
-            <button id="btn-submit">Submit</button>
+            <button id="btn-submit" onclick="interestCalc()">Submit</button>
         </div>
-        <div>
+        <div class="gridItem">
             <h3>Goal Calculator</h3>
-            <h4>Please enter your money goal: </h4>
-            <input type="text" id="goal" placeholder="Enter Amount">
+            <h4>Enter your financial goal: </h4>
+            <input type="text" id="goal" placeholder="Enter Amount ($)">
             <h4>Please enter your current savings: </h4>
-            <input type="text" id="savings" placeholder="Enter Amount">
+            <input type="text" id="savings" placeholder="Enter Amount ($)">
             <h4>Please enter your annual interest: </h4>
-            <input type="text" id="interest-goal" placeholder="Enter Percentage">
+            <input type="text" id="interestG" placeholder="Enter Percentage (%)">
             <script src="script.js"></script>
-            <button id="btn-submit">Submit</button>
+            <button id="btn-submit" onclick="goalCalc()">Submit</button>
         </div>
     </div>
+    <footer>
+        <img class="spider" src="spider Background Removed.png" width="100px" height="100px">
+        <img class="ghost" src="ghost Background Removed.png" width="100px" height="100px">
+        <img class="spider" src="spider Background Removed.png" width="100px" height="100px">
+        <img class="ghost" src="ghost Background Removed.png" width="100px" height="100px">
+    </footer>
 </body>
 </html>
