@@ -10,13 +10,14 @@ public class Balls {
 
 
 // Gets information on what the user has
-        System.out.println("How much pieces of candy do you have? (ex: '20 KitKats')");
+        System.out.println("What candy do you have? (ex: '25 kitkat')");
         int numOnHand = 0;
         String onHand = "";
         do{
             try{
                 onHand = scan.nextLine();
                 numOnHand = Integer.parseInt(onHand.substring(0, onHand.indexOf(" ")));
+                onHand = onHand.substring(onHand.indexOf(" ") + 1);
                 if ( numOnHand >= 0){
                     break;
                 }
@@ -37,6 +38,7 @@ public class Balls {
             try {
                 desired = scan.nextLine();
                 numDesired = Integer.parseInt(desired.substring(0, desired.indexOf(" ")));
+                desired = desired.substring(desired.indexOf(" ") + 1);
                 if( numDesired >= 0){
                     break;
                 }
@@ -84,6 +86,55 @@ public class Balls {
 
 
 //Creates the user entry
+        CandyEntry x = new CandyEntry(user, numOnHand, onHand, numDesired, desired);
+
+        if( post.equals("Y")){
+            System.out.println(x);
+        }
+        else{
+            System.out.println("Would you like to see all the posts?");
+        }
+
+
+        System.out.println("Would you like to see all the posts?");
+        String seeAll;
+        do{
+            try {
+                seeAll = scan.nextLine();
+                if (seeAll.length() == 1) {
+                    if (seeAll.equals("Y") || seeAll.equals("N")) {
+                        break;
+                    }
+                    else {
+                        System.out.println("Please enter desired format!(Y/N)");
+
+                    }
+                } else {
+                    System.out.println("Please enter desired format!(Y/N)");
+                }
+            }
+            catch (Exception e){
+                System.out.println("Please enter valid input!(Y/N)");
+
+            }
+        }
+        while(true);
+
+
+
+        for(int i = 0; i <= 1; i++){
+            if(seeAll.equals("Y")){
+                try{
+                    System.out.println(x);
+                }
+                catch (Exception e){
+                    break;
+                }
+            }
+        }
+        if(seeAll.equals("N")){
+            System.out.println("Have a nice day :)");
+        }
 
 
 
