@@ -1,5 +1,5 @@
-import java.util.*;
-public class Main {
+/*import java.util.*;
+public class boob {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("-------------Candy Exchange----------------------\n\n\n");
@@ -10,8 +10,35 @@ public class Main {
 
 
 // Gets information on what the user has
-        System.out.println("What candy do you have? (ex: '25 kitkat')");
+        System.out.println("What type of candy do you have?");
         int numOnHand = 0;
+        boolean done = false;
+        do{
+            String x = scan.nextLine();
+           if (x is any word)
+
+
+
+
+            numOnHand = Integer.parseInt(x);
+
+
+
+
+            if( numOnHand >= 1){
+                done = true;
+            }
+            else{
+                System.out.println("enter a positive integer!");
+            }
+
+        }while(!done);
+
+
+
+
+
+/*
         String onHand = "";
         do{
             try{
@@ -140,3 +167,4 @@ public class Main {
 
     }
 }
+*/

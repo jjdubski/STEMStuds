@@ -6,8 +6,8 @@ public class CandyEntry {
     private static int entryNumber = 0;
     private static ArrayList<CandyEntry> entryList;
 
-    public CandyEntry(String name, int numOnHand, String onHand, int numDesired, String desired){
-        entryNumber ++;
+    public CandyEntry(String name, int numOnHand, String onHand, int numDesired, String desired) {
+        entryNumber++;
         this.name = name;
         this.numOnHand = numOnHand;
         this.onHand = onHand;
@@ -15,9 +15,9 @@ public class CandyEntry {
         this.desired = desired;
     }
 
-   // public String toString(){
-       // return "Entry Number: " + entryNumber
- //   }
+    public String toString(){
+       return "Entry Number: " + entryNumber + "\n" + name + " has " + numOnHand + onHand + "thay are willing to trade for:\n" + numDesired + desired;
+    }
 
 
 }
