@@ -1,4 +1,6 @@
 #Readme
+![scrnshot1](https://user-images.githubusercontent.com/101855602/211411989-7c3cbd52-b9ad-4883-ad05-924e99e65afc.jpg)
+![scrnshot2](https://user-images.githubusercontent.com/101855602/211411996-a5f7eaa2-b343-4bdd-bd4f-756d6312e03b.jpg)
 
 # Money Saver
 
